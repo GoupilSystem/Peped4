@@ -162,12 +162,12 @@
   background-color: #467370 !important;
 }
 
-.about-section {
-  padding-top: 10rem;
+.portfolio-section {
+  padding-top: 1rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
-.about-section p {
+.portfolio-section p {
   margin-bottom: 5rem;
 }
 
