@@ -43,13 +43,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+            <a class="nav-link js-scroll-trigger about-menu" href="#about">A propos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger contact-menu" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -69,20 +69,20 @@
           style="font-family: 'Montserrat', sans-serif; font-weight:800; letter-spacing:-1px; color: #aabbaa">SNAP!</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5" id="protrans">Traductions professionnelles.</h2>
         <br>
-        <a href="#about" class="btn btn-primary js-scroll-trigger" id="welcome">Bienvenue</a>
+        <a href="#human" class="btn btn-primary js-scroll-trigger" id="welcome">Bienvenue</a>
       </div>
     </div>
   </header>
 
   <!-- about Section -->
-  <section id="about" class="projects-section bg-light">
+  <section id="human" class="projects-section bg-light">
     <div class="container">
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
           <div class="featured-text text-center text-lg-left">
             <h4 id="human-title">Pourquoi travailler avec un traducteur humain?</h4>
             </br>
-            <p class="text-black-50 mb-0" id="human">Vous en avez assez des traductions imparfaites voire incohérentes
+            <p class="text-black-50 mb-0" id="human-text">Vous en avez assez des traductions imparfaites voire incohérentes
               des robots de traduction en ligne?
               Seul un traducteur humain impliqué peut pleinement prendre en compte le contexte et le lexique spécifique
               de votre document lors de son travail de traduction et vous fournir une prestation fiable.
@@ -95,7 +95,10 @@
           <img class="img-fluid mb-3 mb-lg-0" src="img/main-tendue.jpg" alt="">
         </div>
       </div>
-      <br><br><br><br>
+    </div>
+  </section>
+  <section id="about" class="projects-section bg-light" style="padding-top:0">
+    <div class="container">
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
@@ -103,7 +106,7 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
-            <h4 id="apropos-title">A propos de Snap!</h4>
+            <h4 class="about-menu">A propos de Snap!</h4>
             </br>
             <p class="text-black-50 mb-0" id="apropos">De père hollandais et de mère française, je suis diplômé en
               langues étrangères* et riche de 15 ans d'expérience professionnelle en pays étrangers (commerce
@@ -148,12 +151,12 @@
   </section>
 
   <!-- portfolio Section -->
-  <section id="portfolio" class="about-section text-center">
+  <section id="portfolio" class="portfolio-section text-center" style="padding-top:5rem">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">Portfolio</h2>
-          <p class="text-white-50" id="trust">Ils font confiance à Snap!
+          <p class="text-white-50" id="trust" style="margin-bottom: 2rem">Ils font confiance à Snap!
         </div>
       </div>
       <img src="img/logos.png" class="img-fluid" style="padding-bottom:70px" alt="">
@@ -165,7 +168,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Contact</h2>
+          <h2 class="text-white mb-4 contact-menu">Contact</h2>
         </div>
       </div>
 
@@ -251,12 +254,12 @@
           $("#human-title").html(
             "Pourquoi travailler avec un traducteur humain?"
           );
-          $("#human").html(
+          $("#human-text").html(
             "Vous en avez assez des traductions imparfaites voire incohérentes des robots de traduction en ligne?" +
             "Seul un traducteur humain impliqué peut pleinement prendre en compte le contexte et le lexique spécifique de votre document lors de son travail de traduction et vous fournir une prestation fiable." +
             "<br>C’est à ce titre que «Snap! Traductions» est à votre service."
           );
-          $("#apropos-title").html(
+          $(".about-menu").html(
             "A propos de Snap!"
           );
           $("#apropos").html(
@@ -274,6 +277,9 @@
           );
           $("#trust").html(
             "Ils font confiance à «Snap!»"
+          );
+          $(".contact-menu").html(
+            "Contact"
           );
           $("#address").html(
             "Adresse"
@@ -297,12 +303,12 @@
           $("#human-title").html(
             "Why working with a human translator?"
           );
-          $("#human").html(
+          $("#human-text").html(
             "Are you tired of imperfect or even inconsistent translations from online translation robots?" +
             "Only an involved human translator can fully take into account the context and the specific lexicon of your document when translating, and then provide you with a reliable service." +
-            "<br>That’s why «Snap! Translations» is at your service."
+            "<br>That’s why «Snap!» is at your service."
           );
-          $("#apropos-title").html(
+          $(".about-menu").html(
             "About Snap!"
           );
           $("#apropos").html(
@@ -311,15 +317,18 @@
           );
           $("#company").html(
             "</br></br>" +
-            "With my self-company «Snap! Translations», I have been offering for 3 years now translations of " +
+            "With my self-company «Snap!», I have been offering for more than 3 years translations of " +
             "any type of texts: professional documents, commercial contracts, minutes of general meetings, " +
-            "marketing tools (company brochures, slide shows, websites...), cultural writings (scripts, scripts, " +
+            "marketing tools (company brochures, slide shows, websites...), cultural writings (scripts, scenarios, " +
             "subtitles...) in the following languages:" +
             "</br>- French</br>- Dutch</br>- English</br>- German</br></br>" +
             "Please do not hesitate to contact me to identify your needs and to agree together on the objectives to be met."
           );
           $("#trust").html(
             "They trust «Snap!»"
+          );
+          $(".contact-menu").html(
+            "Contact"
           );
           $("#address").html(
             "Address"
@@ -337,18 +346,18 @@
             "Professionele vertalingen"
           );
           $("#welcome").html(
-            "Welcom"
+            "Welkom"
           );
           $("#human-title").html(
             "Waarom werken met een menselijke vertaler?"
           );
-          $("#human").html(
+          $("#human-text").html(
             "Bent u moe van onvolmaakte of zelfs inconsistente vertalingen van online vertaalrobots? Alleen een " +
             "betrokken menselijke vertaler kan bij het vertalen ten volle rekening houden met de context en het " +
             "specifieke lexicon van uw document, en dus u een betrouwbare dienst bieden." +
-            "<br>Dit is de reden waarom «Snap! Vertalingen» staat tot uw dienst."
+            "<br>Dit is de reden waarom «Snap!» staat tot uw dienst."
           );
-          $("#apropos-title").html(
+          $(".about-menu").html(
             "Over Snap!"
           );
           $("#apropos").html(
@@ -358,7 +367,7 @@
           );
           $("#company").html(
             "</br></br>" +
-            "Met mijn zelfstandige bedrijf «Snap! Vertalingen» bied ik nu al 3 jaar vertalingen aan van alle " +
+            "Met mijn zelfstandige bedrijf «Snap!» bied ik nu al meer dan 3 jaar vertalingen aan van alle " +
             "soorten teksten: professionele documenten, commerciële contracten, notulen van algemene " +
             "vergaderingen, marketingtools (bedrijfsbrochures, diashows, websites...), culturele geschriften " +
             "(scripts, scenario's, ondertitels,...) in de volgende talen:" +
@@ -367,6 +376,9 @@
           );
           $("#trust").html(
             "Ze vertouwen «Snap!»"
+          );
+          $(".contact-menu").html(
+            "Contact"
           );
           $("#address").html(
             "Adres"
@@ -389,32 +401,35 @@
           $("#human-title").html(
             "Warum mit einem menschlichen Übersetzer arbeiten?"
           );
-          $("#human").html(
+          $("#human-text").html(
             "Sind Sie der unvollkommenen oder sogar inkonsistenten Übersetzungen von Online-" +
             "Übersetzungsrobotern überdrüssig? Nur ein beteiligter menschlicher Übersetzer kann bei der " +
             "Übersetzung den Kontext und das spezifische Lexikon Ihres Dokuments vollständig " +
             "berücksichtigen, und Ihnen deshalb einen zuverlässigen Dienst zu bieten." +
             "<br>Aus diesem Grund ist «Snap! Übersetzungen» steht Ihnen zur Verfügung."
           );
-          $("#apropos-title").html(
+          $(".about-menu").html(
             "Über Snap!"
           );
           $("#apropos").html(
             "Mit einem niederländischen Vater und einer französischen Mutter habe ich Abschlussen in " +
             "Fremdsprachen* und 15 Jahre Berufserfahrung im Ausland (B2B internationaler Handel)." +
-            "</br></br>* : DBE-Diploma in Business English, Gründbaustein, Nederlands Inb. cursus Niveau 4"
+            "</br></br>* : DBE-Diploma in Business English, Gründbaustein, Nederlands Inb. cursus niveau 4"
           );
           $("#company").html(
             "</br></br>" +
-            "Durch mein Eigenunternehmen «Snap! Übersetzungen» biete ich seit 3 Jahren Übersetzungen aller " +
+            "Durch mein Eigenunternehmen «Snap!» biete ich seit über 3 Jahren Übersetzungen aller " +
             "Arten von Texten an: professionelle Dokumente, Handelsverträge, Protokolle von " +
             "Hauptversammlungen, Marketing-Instrumente (Firmenbroschüren, Diashows, Websites...), " +
-            "kulturelle Schriften (Drehbücher, Skripte, Untertitel...) in den folgenden Sprachen:" +
+            "kulturelle Schriften (Drehbücher, Skripte, Untertiteln...) in den folgenden Sprachen:" +
             "</br>- Französisch</br>- Niederländisch</br>- Englisch</br>- Englisch</br></br>" +
             "Zögern Sie nicht, mit mir Kontakt aufzunehmen, um Ihre Bedürfnisse zu ermitteln und sich gemeinsam auf die zu erreichenden Ziele zu einigen."
           );
           $("#trust").html(
             "Sie vertrauen «Snap!»"
+          );
+          $(".contact-menu").html(
+            "Kontakt"
           );
           $("#address").html(
             "Adresse"
