@@ -34,6 +34,12 @@
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" style="font-family: 'Montserrat', sans-serif; font-weight:800"
         href="#page-top">SNAP!</a>
+      <div>
+        <button class="btn btn-default flag-btn" id="france-btn"></button>
+        <button class="btn btn-default flag-btn" id="uk-btn"></button>
+        <button class="btn btn-default flag-btn" id="nl-btn"></button>
+        <button class="btn btn-default flag-btn" id="dl-btn"></button>
+      </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -60,15 +66,15 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <br><br>
-        <button class="btn btn-default flag-btn" id="france-btn"></button>
-        <button class="btn btn-default flag-btn" id="uk-btn"></button>
-        <button class="btn btn-default flag-btn" id="nl-btn"></button>
-        <button class="btn btn-default flag-btn" id="dl-btn"></button>
-        <h1 style="font-family: 'Montserrat', sans-serif; font-weight:800; letter-spacing:-1px">SNAP!</h1>
-        <h2 class="mx-auto mt-2 mb-5" style="color: rgb(255, 255, 255, 0.75)" id="protrans">Traductions professionnelles.</h2>
         <br>
-        <a href="#human" class="btn btn-primary js-scroll-trigger" id="welcome">Bienvenue</a>
+        <a href="#human" class="btn btn-default logo-btn js-scroll-trigger" id="welcome"></a>
+        <!-- 
+        <h1 style="font-family: 'Montserrat', sans-serif; font-weight:800; letter-spacing:-1px">SNAP!</h1>
+         -->
+         <br>
+        <h2 class="mx-auto mt-2 mb-5" style="color: rgb(255, 255, 255, 0.75)" id="protrans">Traductions
+          professionnelles.</h2>
+        <br>
       </div>
     </div>
   </header>
@@ -83,7 +89,8 @@
           <p class="text-black-50 mb-0" id="human-text">Vous en avez assez des traductions imparfaites voire
             incohérentes
             des robots de traduction en ligne?
-            Seul un traducteur humain impliqué peut pleinement prendre en compte le contexte et le lexique spécifique
+            Seul un traducteur humainement impliqué peut pleinement prendre en compte le contexte et le lexique
+            spécifique
             de votre document lors de son travail de traduction et vous fournir une prestation fiable.
             <br>C’est à ce titre que «Snap!» est à votre service.
           </p>
@@ -249,8 +256,8 @@
             "Pourquoi travailler avec un traducteur humain?"
           );
           $("#human-text").html(
-            "Vous en avez assez des traductions imparfaites voire incohérentes des robots de traduction en ligne?" +
-            "Seul un traducteur humain impliqué peut pleinement prendre en compte le contexte et le lexique spécifique de votre document lors de son travail de traduction et vous fournir une prestation fiable." +
+            "Vous en avez assez des traductions imparfaites voire incohérentes des robots de traduction en ligne? " +
+            "Seul un traducteur humainement impliqué peut pleinement prendre en compte le contexte et le lexique spécifique de votre document lors de son travail de traduction et vous fournir une prestation fiable." +
             "<br>C’est à ce titre que «Snap!» est à votre service."
           );
           $(".about-menu").html(
