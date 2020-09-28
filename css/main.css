@@ -1,9 +1,7 @@
 .flag-btn {
     box-shadow:0 0 0 !important;
-    width: 4em;
-    max-width: 20%;
+    width: 2em;
     height: auto;
-    min-height: 3em;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
