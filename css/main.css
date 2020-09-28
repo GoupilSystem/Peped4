@@ -1,9 +1,11 @@
 .flag-btn {
-    width: 6em;
-    height: 4em;
-    padding: 10px 1px !important;
-    border-radius: 0.5em;
-    background-size: contain;
+    box-shadow:0 0 0 !important;
+    width: 4em;
+    max-width: 20%;
+    height: auto;
+    min-height: 3em;
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -42,6 +44,7 @@
 .logo-btn {
     width: 16em;
     height: 16em;
+    margin-top: 8em;
     border-radius: 0.5em;
     background-size: contain;
     background-repeat: no-repeat;
