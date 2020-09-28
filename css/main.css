@@ -40,11 +40,16 @@
 }
 
 .logo-btn {
+    box-shadow:0 0 0 !important;
     width: 16em;
     height: 16em;
-    margin-top: 8em;
+    margin-top: 2em;
     border-radius: 0.5em;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../img/logo.jpg");
+}
+
+.logo-btn:hover {
+    background-image: url("../img/logo-hover.jpg");
 }
